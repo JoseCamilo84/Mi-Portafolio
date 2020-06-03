@@ -1,0 +1,498 @@
+@font-face {
+   font-family: 'icomoon';
+   src:  url('/assets/fonts/icomoon.eot?agzols');
+   src:  url('/assets/fonts/icomoon.eot?agzols#iefix') format('embedded-opentype'),
+     url('/assets/fonts/icomoon.ttf?agzols') format('truetype'),
+     url('/assets/fonts/icomoon.woff?agzols') format('woff'),
+     url('/assets/fonts/icomoon.svg?agzols#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+ }
+ 
+[class^="icon-"], [class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'icomoon' !important;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+ 
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+  
+.icon-menu:before {
+   content: "\e9bb";
+}
+
+body {
+   margin: 0px;
+   font-family: 'El Messiri', sans-serif;
+   font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Chau Philomene One', sans-serif;
+}
+
+img {
+   max-width: 100%;
+}
+
+
+
+.title {
+   color: #595959;
+}
+
+.link-interno {
+   text-decoration: none;
+}
+
+.subtitle {
+   padding: 20px 80px;
+   text-transform: uppercase;
+   color: #8DC641;
+   margin-bottom: 0px;
+}
+
+.container {
+   max-width: 1000px;
+   flex: 1;
+   margin: 0 auto;
+   display: inherit;
+   justify-content: inherit;
+   flex-wrap: inherit;
+}
+
+/* Cabecera - Header */
+.header {
+   display: flex;
+   justify-content: space-between;
+   border-top: solid 7px #8DC641;
+   height: 95.35px;
+   flex-wrap: wrap;
+}
+
+.icon-menu {
+   display: none;
+   position: fixed;
+   top: 12px;
+   left: 5px;
+   color: rgb(203, 206, 200);
+   background-color: rgba(246, 147, 35, 0.6);
+   padding: 10px;
+   border-radius: 20px;
+   z-index: 2;
+}
+
+.logo {
+   margin: 0px;
+}
+
+.menu ol {
+   display: flex;
+   list-style: none;
+   margin: 0px;
+}
+
+.menu ol > li {
+   padding-right: 30px;
+   line-height: 97px;
+   
+}
+
+.link {
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 17px;
+   color: #F69323;
+}
+
+.btn {
+   border: solid 1px #F69323;
+   padding: 5px 50px;
+   border-radius: 10px;
+}
+
+.link:hover {
+   color: #8DC641;
+}
+
+.btn:hover {
+   border: solid 1px #8DC641;
+   background-color: #8DC641;
+   color: white;
+}
+
+/* Sección - Principal */
+.hero {
+   height: 300px;
+   background-image: url('/src/assets/img/computer.jpg');
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+h1 {
+   line-height: 1.5em;
+   font-size: 35px;
+   margin: 0px 50px;
+}
+
+strong {
+   color: #F69323;
+}
+
+/* Sección Portafolio */
+.portfolio {
+   display: flex;
+   margin-bottom: 30px;
+   background-color: #EBF4FF;
+   border-radius: 10px;
+   padding: 30px;
+   justify-content: space-evenly;
+   align-items: center;
+   box-shadow: 10px 10px 5px 0px #8c8c8c;
+   flex-wrap: wrap;
+}
+
+.project {
+   width: 49%;
+}
+
+.project-title {
+   font-size: 28px;
+   margin: 10px 0 0 0;
+}
+
+.project-image {
+   width: 50%;
+   margin: 0px;
+}
+
+.project-image img {
+   border-radius: 10px;
+}
+
+.video-edteam {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+}
+
+.video-flexible {
+   position: relative;
+   background-color: white;
+   width: 100%;
+   padding-top: 56.25%;
+}
+
+.project-subtitle {
+   font-family: 'El Messiri', sans-serif;
+   font-size: 16px;
+   margin: 0px;
+   color: #8DC641;
+   padding-top: 10px;
+}
+
+.project-date {
+   font-family: 'Chau Philomene One', sans-serif;
+   font-size: 18px;
+   margin: 0px;
+   color: #595959;
+}
+
+.project-url {
+   font-family: 'Chau Philomene One', sans-serif;
+   font-size: 18px;
+   margin-top: 0px;
+   color: #595959;
+}
+
+.project-url a {
+   color: #8DC641;
+}
+
+.project-description {
+   color: #595959;
+}
+
+span {
+   color: #F69323;
+}
+
+/* Sección Experiencia */
+.experience {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   flex-shrink: 0;
+}
+
+.events {
+   border-radius: 10px;
+   box-shadow: 10px 10px 5px 0px #8c8c8c;
+   margin: 15px 0px;
+   padding: 20px;
+   width: 350px;
+   height: 500px;
+   border: solid 1px #8c8c8c;
+   text-align: center;
+   background-color: white;
+}
+
+.events-conteiner {
+   background-color: #EBF4FF;
+   border-radius: 10px;
+   padding: 15px;
+   margin-top: 10px;
+}
+
+.events-title {
+   color: #595959;
+   margin-top: 0px;
+}
+
+.events-image {
+   margin: 0px;
+}
+
+/* Sección Contactos */
+.contact {
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   flex-direction: column;
+   height: 300px;
+   background-color: #F69323;
+   flex-wrap: wrap;
+}
+
+.contact-title {
+   margin-bottom: 10px;
+   margin-top: 0px;
+   color: black;
+}
+
+.form-contact input {
+   margin-bottom: 20px;
+   padding: 8px 38px;
+   width: 200px;
+   border-radius: 5px;
+   border: solid 1px #595959;
+   background-image: url('./assets/img/mail-mess.svg');
+   background-size: 20px 20px;
+   background-repeat: no-repeat;
+   background-position-y: center;
+   background-position-x: 10px;
+}
+
+.form-contact button {
+   display: block;
+   margin: 0 auto;
+   border: solid 1px white;
+   color: white;
+   padding: 5px 40px;
+   border-radius: 5px;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+.social-link {
+   display: inline-block;
+   width: 30px;
+   height: 30px;
+   background-size: 30px 30px;
+   background-repeat: no-repeat;
+}
+
+.social {
+   margin-top: 20px;
+}
+
+.social-link.twitter {
+   padding-right: 10px;
+   background-image: url('../src/assets/img/twitter.svg');
+}
+
+.social-link.facebook {
+   padding-right: 10px;
+   background-image: url('../src/assets/img/facebook.svg');
+}
+
+.social-link.linkedin {
+   padding-right: 10px;
+   background-image: url('../src/assets/img/linkedin.svg');
+}
+
+.social-link.github {
+   padding-right: 10px;
+   background-image: url('../src/assets/img/github.svg');
+}
+
+/* Sección Footer */
+.footer {
+   font-weight: 700;
+   color: #F69323;
+   font-size: 13px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+
+
+/* Media Queris */
+@media screen and (max-width: 1024px) {
+   
+}
+
+@media screen and (max-width: 832px) {
+   .header {
+      height: auto;
+      display: block;
+   }
+
+   .icon-menu {
+      display: initial;
+   }
+
+   .logo {
+      text-align: center;
+   }
+
+   .menu {
+      height: auto;
+      position: fixed;
+      background-color: rgba(140, 198, 65, 0.7);
+      top: 0;
+      left: -240px;
+      border-bottom-right-radius: 10px;
+      transition: 1s;
+      z-index: 1;
+   }
+
+   .menu.in-active {
+      left: 0;
+   }
+
+   .menu ol {
+      display: initial;
+      padding: 0px;
+   }
+
+   .menu ol > li {
+      text-align: center;
+      line-height: 40px;
+      padding-right: 0px;
+   }
+
+   .btn {
+      border: none;
+      padding: 5px 50px;
+   }
+
+   .link:hover {
+      color: #e8eee2;
+   }
+
+   .btn:hover {
+      background-color: transparent;
+      border-radius: 0;
+      border: 0;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+   .icon-menu {
+      display: initial;
+   }
+
+   h1 {
+      font-size: 30px;
+      margin: 0px 30px;
+   }
+
+   .portfolio {
+      flex-direction: column-reverse;
+   }
+
+   .project {
+      width: 80%;
+   }
+
+   .project-image {
+      width: 70%;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .logo {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   .icon-menu {
+      display: initial;
+   }
+
+   .logo img {
+      width: 285px;
+   }
+
+   h1 {
+      font-size: 25px;
+   }
+
+   .project, .events {
+      font-size: 15px;
+   }
+
+   .project-title, .events-title {
+      font-size: 1.5em;
+   }
+
+   .project-subtitle {
+      font-size: 0.9em;
+   }
+
+   .project-date {
+      font-size: 0.8em;
+   }
+
+   .project-url {
+      font-size: 0.8em;
+   }
+
+   .project-description, .events-description {
+      font-size: 0.8em;
+   }
+
+   .link-interno h2 {
+      padding: 0.8em;
+      font-size: 18px;
+   }
+
+   .events {
+      height: auto;
+   }
+
+   .footer {
+      padding: 0.4em 4em;
+      text-align: center;
+   }
+}
